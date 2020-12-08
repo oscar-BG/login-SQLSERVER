@@ -1,0 +1,13 @@
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\bin\Debug\conexionSQL.exe.config
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\bin\Debug\conexionSQL.exe
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\bin\Debug\conexionSQL.pdb
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.csprojAssemblyReference.cache
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.Login.resources
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.Properties.Resources.resources
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.csproj.GenerateResource.cache
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.csproj.CoreCompileInputs.cache
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.exe
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.pdb
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.menu.resources
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.nuevoUsuario.resources
+D:\Programacion\BaseDeDatos\proyectFinal\agendaEscritorio\conexionSQL\obj\Debug\conexionSQL.modificarUsu.resources

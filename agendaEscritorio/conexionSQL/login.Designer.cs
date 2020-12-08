@@ -30,13 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.btnIngresar = new System.Windows.Forms.Button();
             this.btnNUsuario = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +48,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnModificar);
             this.panel2.Controls.Add(this.btnNUsuario);
             this.panel2.Controls.Add(this.btnIngresar);
             this.panel2.Controls.Add(this.txtContraseña);
@@ -61,30 +59,27 @@
             this.panel2.Size = new System.Drawing.Size(435, 165);
             this.panel2.TabIndex = 1;
             // 
-            // lblUsuario
+            // btnNUsuario
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(27, 18);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(95, 13);
-            this.lblUsuario.TabIndex = 0;
-            this.lblUsuario.Text = "Ingrese su Usuario";
+            this.btnNUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNUsuario.Location = new System.Drawing.Point(294, 92);
+            this.btnNUsuario.Name = "btnNUsuario";
+            this.btnNUsuario.Size = new System.Drawing.Size(109, 39);
+            this.btnNUsuario.TabIndex = 5;
+            this.btnNUsuario.Text = "Nuevo Usuaio";
+            this.btnNUsuario.UseVisualStyleBackColor = true;
+            this.btnNUsuario.Click += new System.EventHandler(this.btnNUsuario_Click);
             // 
-            // label2
+            // btnIngresar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ingrese su contraseña";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(30, 41);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(154, 20);
-            this.txtUsuario.TabIndex = 2;
+            this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIngresar.Location = new System.Drawing.Point(294, 29);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(109, 42);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // txtContraseña
             // 
@@ -93,32 +88,33 @@
             this.txtContraseña.Size = new System.Drawing.Size(154, 20);
             this.txtContraseña.TabIndex = 3;
             // 
-            // btnIngresar
+            // txtUsuario
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(294, 18);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(109, 42);
-            this.btnIngresar.TabIndex = 4;
-            this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.txtUsuario.Location = new System.Drawing.Point(30, 41);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(154, 20);
+            this.txtUsuario.TabIndex = 2;
             // 
-            // btnNUsuario
+            // label2
             // 
-            this.btnNUsuario.Location = new System.Drawing.Point(294, 66);
-            this.btnNUsuario.Name = "btnNUsuario";
-            this.btnNUsuario.Size = new System.Drawing.Size(109, 39);
-            this.btnNUsuario.TabIndex = 5;
-            this.btnNUsuario.Text = "Nuevo Usuaio";
-            this.btnNUsuario.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(220, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Ingrese su contraseña";
             // 
-            // btnModificar
+            // lblUsuario
             // 
-            this.btnModificar.Location = new System.Drawing.Point(294, 111);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(109, 36);
-            this.btnModificar.TabIndex = 6;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(30, 12);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(190, 21);
+            this.lblUsuario.TabIndex = 0;
+            this.lblUsuario.Text = "Ingrese su Usuario";
+            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // Login
             // 
@@ -128,7 +124,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "login";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -139,7 +135,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNUsuario;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.TextBox txtContraseña;

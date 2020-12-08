@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace conexionSQL
 {
-    public partial class Login : Form
+    public partial class menu : Form
     {
-        public Login()
+        public menu()
         {
             InitializeComponent();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            modificarUsu mu = new modificarUsu();
+            mu.ShowDialog();
         }
     }
 }
