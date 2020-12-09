@@ -16,7 +16,10 @@ namespace conexionSQL
         public modificarUsu()
         {
             InitializeComponent();
+            autocompletar();
         }
+        DataTable datos = new DataTable();
+
         private void modificarUsu_Load(object sender, EventArgs e)
         {
 
@@ -100,6 +103,21 @@ namespace conexionSQL
             txtTCuenta.Clear();
             txtNombreUsu.Clear();
             txtPassword.Clear();
+        }
+
+        public void autocompletar()
+        {
+            conexionbd conexion = new conexionbd();
+            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
+            String consulta = "SELECT * FROM db_owner.usuarioSCHARP";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta,conexion.conectardb);
+            adaptador.Fill(datos);
+
+            for (int i = 0; i < datos.Rows.Count; i++)
+            {
+                lista.Add(datos.Rows[i]["nombreUsuario"].ToString());
+            }
+            txtBuscarUsu.AutoCompleteCustomSource = lista;
         }
     }
 }
