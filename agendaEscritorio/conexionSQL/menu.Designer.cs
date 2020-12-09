@@ -39,9 +39,14 @@
             this.tiposDeCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.verTodaLaTablaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ckbNombreUsu = new System.Windows.Forms.CheckBox();
+            this.ckbClave = new System.Windows.Forms.CheckBox();
+            this.ckbTipoCuenta = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -52,7 +57,7 @@
             this.acerdaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(454, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(455, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,7 +103,7 @@
             this.dtgMostrarDatos.AllowUserToAddRows = false;
             this.dtgMostrarDatos.AllowUserToDeleteRows = false;
             this.dtgMostrarDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMostrarDatos.Location = new System.Drawing.Point(30, 44);
+            this.dtgMostrarDatos.Location = new System.Drawing.Point(25, 47);
             this.dtgMostrarDatos.Name = "dtgMostrarDatos";
             this.dtgMostrarDatos.ReadOnly = true;
             this.dtgMostrarDatos.Size = new System.Drawing.Size(399, 171);
@@ -118,11 +123,58 @@
             this.verTodaLaTablaToolStripMenuItem.Text = "Ver toda la tabla";
             this.verTodaLaTablaToolStripMenuItem.Click += new System.EventHandler(this.verTodaLaTablaToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.ckbTipoCuenta);
+            this.panel1.Controls.Add(this.ckbClave);
+            this.panel1.Controls.Add(this.ckbNombreUsu);
+            this.panel1.Location = new System.Drawing.Point(13, 236);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(411, 117);
+            this.panel1.TabIndex = 2;
+            // 
+            // ckbNombreUsu
+            // 
+            this.ckbNombreUsu.AutoSize = true;
+            this.ckbNombreUsu.Enabled = false;
+            this.ckbNombreUsu.Location = new System.Drawing.Point(34, 13);
+            this.ckbNombreUsu.Name = "ckbNombreUsu";
+            this.ckbNombreUsu.Size = new System.Drawing.Size(117, 17);
+            this.ckbNombreUsu.TabIndex = 0;
+            this.ckbNombreUsu.Text = "Nombre de Usuario";
+            this.ckbNombreUsu.UseVisualStyleBackColor = true;
+            this.ckbNombreUsu.CheckedChanged += new System.EventHandler(this.ckbNombreUsu_CheckedChanged);
+            // 
+            // ckbClave
+            // 
+            this.ckbClave.AutoSize = true;
+            this.ckbClave.Enabled = false;
+            this.ckbClave.Location = new System.Drawing.Point(34, 37);
+            this.ckbClave.Name = "ckbClave";
+            this.ckbClave.Size = new System.Drawing.Size(52, 17);
+            this.ckbClave.TabIndex = 1;
+            this.ckbClave.Text = "clave";
+            this.ckbClave.UseVisualStyleBackColor = true;
+            this.ckbClave.CheckedChanged += new System.EventHandler(this.ckbClave_CheckedChanged);
+            // 
+            // ckbTipoCuenta
+            // 
+            this.ckbTipoCuenta.AutoSize = true;
+            this.ckbTipoCuenta.Enabled = false;
+            this.ckbTipoCuenta.Location = new System.Drawing.Point(203, 13);
+            this.ckbTipoCuenta.Name = "ckbTipoCuenta";
+            this.ckbTipoCuenta.Size = new System.Drawing.Size(98, 17);
+            this.ckbTipoCuenta.TabIndex = 2;
+            this.ckbTipoCuenta.Text = "Tipo de cuenta";
+            this.ckbTipoCuenta.UseVisualStyleBackColor = true;
+            this.ckbTipoCuenta.CheckedChanged += new System.EventHandler(this.ckbTipoCuenta_CheckedChanged);
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 252);
+            this.ClientSize = new System.Drawing.Size(455, 365);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgMostrarDatos);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -132,6 +184,8 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +203,9 @@
         private System.Windows.Forms.DataGridView dtgMostrarDatos;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ToolStripMenuItem verTodaLaTablaToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox ckbClave;
+        private System.Windows.Forms.CheckBox ckbNombreUsu;
+        private System.Windows.Forms.CheckBox ckbTipoCuenta;
     }
 }
