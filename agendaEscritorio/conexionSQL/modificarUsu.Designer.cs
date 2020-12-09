@@ -279,6 +279,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(392, 597);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modificarUsu";
             this.Text = "Actualizar Usuario";
             this.Load += new System.EventHandler(this.modificarUsu_Load);

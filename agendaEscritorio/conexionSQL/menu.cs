@@ -67,13 +67,13 @@ namespace conexionSQL
         {
             ckbNombreUsu.Enabled = false;
             ckbClave.Enabled = false;
-            ckbTipoCuenta.Enabled = false;
+            
         }
         public void habilitar()
         {
             ckbNombreUsu.Enabled = true;
             ckbClave.Enabled = true;
-            ckbTipoCuenta.Enabled = true;
+            
         }
 
         private void ckbNombreUsu_CheckedChanged(object sender, EventArgs e)
@@ -92,11 +92,6 @@ namespace conexionSQL
             {
                 dtgMostrarDatos.DataSource = bindingSource1;
                 obtenerDatos("select * from db_owner.usuarioSCHARP;");
-            }
-            else if (ckbTipoCuenta.Checked == true && ckbClave.Checked == true && ckbNombreUsu.Checked == true)
-            {
-                dtgMostrarDatos.DataSource = bindingSource1;
-                obtenerDatos("select tipoCuenta, clave, nombreUsuario from db_owner.usuarioSCHARP;");
             }
         }
 
@@ -122,30 +117,21 @@ namespace conexionSQL
                 dtgMostrarDatos.DataSource = bindingSource1;
                 obtenerDatos("select * from db_owner.usuarioSCHARP;");
             }
-            else if (ckbTipoCuenta.Checked == true && ckbClave.Checked == true && ckbNombreUsu.Checked == true)
-            {
-                dtgMostrarDatos.DataSource = bindingSource1;
-                obtenerDatos("select tipoCuenta, clave, nombreUsuario from db_owner.usuarioSCHARP;");
-            }
         }
 
-        private void ckbTipoCuenta_CheckedChanged(object sender, EventArgs e)
+        private void acendendeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(ckbTipoCuenta.Checked == true)
-            {
-                dtgMostrarDatos.DataSource = bindingSource1;
-                obtenerDatos("select tipoCuenta from db_owner.usuarioSCHARP;");
-            }
-            else if(ckbTipoCuenta.Checked == true && ckbClave.Checked == true && ckbNombreUsu.Checked == true)
-            {
-                dtgMostrarDatos.DataSource = bindingSource1;
-                obtenerDatos("select tipoCuenta, clave, nombreUsuario from db_owner.usuarioSCHARP;");
-            }
-            else if(ckbTipoCuenta.Checked == true && ckbNombreUsu.Checked == true)
-            {
-                dtgMostrarDatos.DataSource = bindingSource1;
-                obtenerDatos("select tipoCuenta, nombreUsuario from db_owner.usuarioSCHARP;");
-            }
+            desabilitar();
+            dtgMostrarDatos.DataSource = bindingSource1;
+            obtenerDatos("SELECT * FROM db_owner.usuarioSCHARP order by nombre;");
+
+        }
+
+        private void descendendeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            desabilitar();
+            dtgMostrarDatos.DataSource = bindingSource1;
+            obtenerDatos("SELECT * FROM db_owner.usuarioSCHARP order by nombre desc;");
         }
     }
 }
