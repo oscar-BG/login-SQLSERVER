@@ -133,5 +133,27 @@ namespace conexionSQL
             dtgMostrarDatos.DataSource = bindingSource1;
             obtenerDatos("SELECT * FROM db_owner.usuarioSCHARP order by nombre desc;");
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dtgMostrarDatos.DataSource = bindingSource1;
+            obtenerDatos("select Id, nombreUsuario, clave,tipoCuenta ,nombre, aPaterno,aMaterno, fechaNac from db_owner.usuarioSCHARP where nombreUsuario like '%" + txtBuscar.Text+"%';");
+            txtBuscar.Clear();
+        }
+
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proyecto final" +
+                "Oscar Bautista Gaytan");
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login lg = new Login();
+            lg.Show();
+            this.Close();
+            this.Dispose();
+            
+        }
     }
 }

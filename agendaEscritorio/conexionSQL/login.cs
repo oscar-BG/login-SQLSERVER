@@ -29,8 +29,10 @@ namespace conexionSQL
             Console.WriteLine(consultaUser);
             if(lector.Read() == true)
             {
+                this.Hide();
                 menu mn = new menu();
                 mn.ShowDialog();
+                this.Dispose();
                 conexion.cerrar();
             }
             else
@@ -46,6 +48,11 @@ namespace conexionSQL
         {
             nuevoUsuario nu = new nuevoUsuario();
             nu.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

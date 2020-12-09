@@ -45,6 +45,9 @@
             this.ckbNombreUsu = new System.Windows.Forms.CheckBox();
             this.descendendeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acendendeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -82,8 +85,9 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // verToolStripMenuItem
             // 
@@ -116,13 +120,14 @@
             this.acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
             this.acerdaDeToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.acerdaDeToolStripMenuItem.Text = "Acerca de ";
+            this.acerdaDeToolStripMenuItem.Click += new System.EventHandler(this.acerdaDeToolStripMenuItem_Click);
             // 
             // dtgMostrarDatos
             // 
             this.dtgMostrarDatos.AllowUserToAddRows = false;
             this.dtgMostrarDatos.AllowUserToDeleteRows = false;
             this.dtgMostrarDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMostrarDatos.Location = new System.Drawing.Point(25, 47);
+            this.dtgMostrarDatos.Location = new System.Drawing.Point(25, 106);
             this.dtgMostrarDatos.Name = "dtgMostrarDatos";
             this.dtgMostrarDatos.ReadOnly = true;
             this.dtgMostrarDatos.Size = new System.Drawing.Size(399, 171);
@@ -132,7 +137,7 @@
             // 
             this.panel1.Controls.Add(this.ckbClave);
             this.panel1.Controls.Add(this.ckbNombreUsu);
-            this.panel1.Location = new System.Drawing.Point(13, 236);
+            this.panel1.Location = new System.Drawing.Point(13, 283);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(411, 49);
             this.panel1.TabIndex = 2;
@@ -177,11 +182,41 @@
             this.acendendeToolStripMenuItem.Text = "Acendende por nombre";
             this.acendendeToolStripMenuItem.Click += new System.EventHandler(this.acendendeToolStripMenuItem_Click);
             // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(207, 53);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscar.TabIndex = 3;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(348, 32);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(76, 41);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(190, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Buscar por Nombre Usuario";
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(455, 365);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgMostrarDatos);
             this.Controls.Add(this.menuStrip1);
@@ -217,5 +252,8 @@
         private System.Windows.Forms.CheckBox ckbNombreUsu;
         private System.Windows.Forms.ToolStripMenuItem descendendeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acendendeToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label1;
     }
 }
