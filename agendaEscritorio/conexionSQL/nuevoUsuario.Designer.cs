@@ -41,12 +41,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxTipoCuenta = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtNUsuario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cbxTipoCuenta = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,6 +171,26 @@
             this.panel1.Size = new System.Drawing.Size(308, 571);
             this.panel1.TabIndex = 12;
             // 
+            // cbxTipoCuenta
+            // 
+            this.cbxTipoCuenta.FormattingEnabled = true;
+            this.cbxTipoCuenta.Items.AddRange(new object[] {
+            "Administrador",
+            "Invitado"});
+            this.cbxTipoCuenta.Location = new System.Drawing.Point(55, 320);
+            this.cbxTipoCuenta.Name = "cbxTipoCuenta";
+            this.cbxTipoCuenta.Size = new System.Drawing.Size(121, 21);
+            this.cbxTipoCuenta.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(55, 292);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Tipo de cuenta";
+            // 
             // txtNUsuario
             // 
             this.txtNUsuario.Location = new System.Drawing.Point(58, 371);
@@ -205,26 +225,7 @@
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 292);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Tipo de cuenta";
-            // 
-            // cbxTipoCuenta
-            // 
-            this.cbxTipoCuenta.FormattingEnabled = true;
-            this.cbxTipoCuenta.Items.AddRange(new object[] {
-            "Administrador",
-            "Invitado"});
-            this.cbxTipoCuenta.Location = new System.Drawing.Point(55, 320);
-            this.cbxTipoCuenta.Name = "cbxTipoCuenta";
-            this.cbxTipoCuenta.Size = new System.Drawing.Size(121, 21);
-            this.cbxTipoCuenta.TabIndex = 17;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // nuevoUsuario
             // 
